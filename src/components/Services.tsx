@@ -59,7 +59,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7, delay: idx * 0.1, ease: "easeOut" }}
-              className={`group bg-neutral-900/40 backdrop-blur-md hover:bg-neutral-900/75 border border-white/5 rounded-3xl p-8 flex flex-col justify-between h-[420px] transition-all duration-500 ${colors[idx % colors.length]}`}
+              className={`group bg-neutral-900/40 backdrop-blur-md hover:bg-neutral-900/75 border border-white/5 rounded-3xl p-8 flex flex-col justify-between min-h-[420px] h-auto transition-all duration-500 ${colors[idx % colors.length]}`}
             >
               {/* Card Header Info */}
               <div>
@@ -123,7 +123,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="group relative bg-gradient-to-br from-amber-500/10 via-orange-600/5 to-transparent border border-amber-500/20 rounded-3xl p-8 flex flex-col justify-between h-[420px] shadow-xl"
+            className="group relative bg-gradient-to-br from-amber-500/10 via-orange-600/5 to-transparent border border-amber-500/20 rounded-3xl p-8 flex flex-col justify-between min-h-[420px] h-auto shadow-xl"
           >
             <div>
               <span className="font-mono text-xs text-amber-500 tracking-widest font-bold uppercase mb-4 block">

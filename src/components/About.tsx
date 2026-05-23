@@ -128,39 +128,42 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             {/* Left Interactive Shoe Wireframe Container (Col: 7) */}
-            <div className="lg:col-span-7 flex justify-center items-center relative min-h-[380px] bg-black/40 rounded-2xl border border-white/5 p-6">
+            <div className="lg:col-span-7 flex justify-center items-center relative min-h-[380px] bg-black/40 rounded-2xl border border-white/5 p-6 overflow-hidden">
               
               {/* Outer decorative tech radar rings */}
               <div className="absolute w-80 h-80 rounded-full border border-white/[0.03] animate-[spin_40s_linear_infinite]" />
               <div className="absolute w-[420px] h-[420px] rounded-full border border-neutral-500/[0.01]" />
               
-              {/* The Shoe Image */}
-              <img
-                src={runnerImg}
-                alt="Rovill Motion Performance Runner wireframe inspect"
-                referrerPolicy="no-referrer"
-                className="max-h-72 object-contain filter brightness-95 contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] relative z-10"
-              />
+              {/* Wrapper container for perfect responsive hotspot coordinate scaling */}
+              <div className="relative w-full max-w-sm aspect-[4/3] flex items-center justify-center z-10 select-none">
+                {/* The Shoe Image */}
+                <img
+                  src={runnerImg}
+                  alt="Rovill Motion Performance Runner wireframe inspect"
+                  referrerPolicy="no-referrer"
+                  className="max-h-64 object-contain filter brightness-95 contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)]"
+                />
 
-              {/* Anatomy Hotspot Markers */}
-              {anatomyMarks.map((mark) => {
-                const isActive = activeMark === mark.id;
-                return (
-                  <button
-                    key={mark.id}
-                    onMouseEnter={() => setActiveMark(mark.id)}
-                    onClick={() => setActiveMark(mark.id)}
-                    style={{ top: mark.top, left: mark.left }}
-                    className={`absolute z-20 group cursor-pointer focus:outline-none -translate-x-1/2 -translate-y-1/2`}
-                    aria-label={`Inspect ${mark.name}`}
-                  >
-                    <span className="relative flex h-5 w-5 items-center justify-center">
-                      <span className={`animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75 duration-1000 ${isActive ? "opacity-100" : "opacity-0"}`}></span>
-                      <span className={`relative inline-flex rounded-full h-3 w-3 ${isActive ? "bg-amber-400" : "bg-white/40 hover:bg-amber-400"} transition-colors`}></span>
-                    </span>
-                  </button>
-                );
-              })}
+                {/* Anatomy Hotspot Markers */}
+                {anatomyMarks.map((mark) => {
+                  const isActive = activeMark === mark.id;
+                  return (
+                    <button
+                      key={mark.id}
+                      onMouseEnter={() => setActiveMark(mark.id)}
+                      onClick={() => setActiveMark(mark.id)}
+                      style={{ top: mark.top, left: mark.left }}
+                      className={`absolute z-20 group cursor-pointer focus:outline-none -translate-x-1/2 -translate-y-1/2`}
+                      aria-label={`Inspect ${mark.name}`}
+                    >
+                      <span className="relative flex h-5 w-5 items-center justify-center">
+                        <span className={`animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75 duration-1000 ${isActive ? "opacity-100" : "opacity-0"}`}></span>
+                        <span className={`relative inline-flex rounded-full h-3 w-3 ${isActive ? "bg-amber-400" : "bg-white/40 hover:bg-amber-400"} transition-colors`}></span>
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Right Diagnostic Readout Sheet (Col: 5) */}
