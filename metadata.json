@@ -1,0 +1,6 @@
+{
+  "name": "Footwear Design Studio",
+  "description": "A luxury cinematic landing page and immersive showcase for a high-end footwear design studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
