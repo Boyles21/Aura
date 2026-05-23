@@ -190,7 +190,7 @@ export default function Hero() {
           <div className="cursor-pointer group" onClick={() => scrollToView("contact")}>
             <p className="text-[10px] uppercase tracking-[0.2em] text-zinc-500 mb-1">INQUIRY</p>
             <p className="text-xs font-medium text-white group-hover:text-amber-400 transition-colors">
-              design@aurafootwear.com
+              design@rovillmotion.com
             </p>
           </div>
           <div className="cursor-pointer group" onClick={() => scrollToView("services")}>

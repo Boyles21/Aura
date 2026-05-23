@@ -98,10 +98,10 @@ export default function Contact() {
                     SECURE INTAKE EMAIL
                   </span>
                   <a
-                    href="mailto:design@aurafootwear.com"
+                    href="mailto:design@rovillmotion.com"
                     className="text-sm font-light text-amber-400 hover:underline"
                   >
-                    design@aurafootwear.com
+                    design@rovillmotion.com
                   </a>
                 </div>
               </div>

@@ -47,10 +47,10 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col items-start leading-none">
               <span className="font-mono text-xs tracking-widest text-amber-500 font-bold uppercase">
-                A U R A
+                R O V I L L
               </span>
               <span className="text-[10px] tracking-widest font-mono text-gray-500">
-                FOOTWEAR
+                M O T I O N
               </span>
             </div>
           </button>
@@ -131,7 +131,7 @@ export default function Navbar() {
                 BOOK CONSULTATION
               </button>
               <p className="text-center font-mono text-[10px] text-gray-500 mt-4 uppercase">
-                Aura Studio Inc. // Nuremberg • Milan
+                Rovill Motion Studio // Nuremberg • Milan
               </p>
             </motion.div>
           </motion.div>

@@ -78,14 +78,14 @@ export default function About() {
             </p>
             <div className="border-l-2 border-amber-500/50 pl-6 my-4">
               <span className="font-mono text-xs text-amber-400 block uppercase font-bold">
-                Aura Footwear Studio Inc.
+                Rovill Motion Studio Inc.
               </span>
               <span className="text-[10px] text-neutral-500 font-mono">
                 MILAN // TOKYO // LOS ANGELES
               </span>
             </div>
             <p className="text-neutral-400 font-light text-sm md:text-base leading-relaxed mt-4">
-              Founded by former automobile and material science engineers, Aura takes an uncompromised, zero-compromise approach to product design. We don’t just sketch sneakers — we stress-test lattice structures, simulate aerodynamics, and invent custom woven uppers that push footwear architecture forward.
+              Founded by former automobile and material science engineers, Rovill Motion takes an uncompromised, zero-compromise approach to product design. We don’t just sketch sneakers — we stress-test lattice structures, simulate aerodynamics, and invent custom woven uppers that push footwear architecture forward.
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-4">
             <div>
               <span className="font-mono text-[10px] text-amber-500 font-bold tracking-widest uppercase block mb-1">
-                AURA RESEARCH LABORATORY
+                ROVILL MOTION RESEARCH LAB
               </span>
               <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-white font-sans">
                 Interactive Anatomy Breakdown
@@ -137,7 +137,7 @@ export default function About() {
               {/* The Shoe Image */}
               <img
                 src={runnerImg}
-                alt="Aura Performance Runner wireframe inspect"
+                alt="Rovill Motion Performance Runner wireframe inspect"
                 referrerPolicy="no-referrer"
                 className="max-h-72 object-contain filter brightness-95 contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] relative z-10"
               />

@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-amber-500 via-orange-600 to-amber-300 flex items-center justify-center border border-white/10 shadow-lg" />
               <span className="font-mono text-sm tracking-[0.25em] text-amber-500 font-bold uppercase">
-                AURA STUDIO
+                ROVILL MOTION
               </span>
             </div>
             <p className="text-neutral-400 font-light text-xs sm:text-sm max-w-sm leading-relaxed">
@@ -111,7 +111,7 @@ export default function Footer() {
 
         {/* Legal Bottom line */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-mono text-neutral-500">
-          <p>© {new Date().getFullYear()} Aura Footwear Design Studio Inc. All rights protected.</p>
+          <p>© {new Date().getFullYear()} Rovill Motion Studio Inc. All rights protected.</p>
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5 hover:text-neutral-300 cursor-pointer">
               <Shield className="w-3.5 h-3.5" />

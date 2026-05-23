@@ -38,11 +38,11 @@ export default function App() {
               transition={{ duration: 0.4 }}
               className="flex flex-col items-center gap-4"
             >
-              {/* Dynamic Aura Emblem ring */}
+              {/* Dynamic Rovill Motion Emblem ring */}
               <div className="relative w-16 h-16 rounded-full bg-gradient-to-tr from-amber-500 via-orange-600 to-amber-300 flex items-center justify-center shadow-[0_0_50px_rgba(245,158,11,0.2)]">
                 <Flame className="w-8 h-8 text-black fill-current animate-pulse" />
-                <span className="absolute inset-x-0 -bottom-10 font-mono text-[10px] tracking-[0.3em] text-amber-500 font-bold uppercase text-center">
-                  AURA
+                <span className="absolute inset-x-0 -bottom-10 font-mono text-[9px] tracking-[0.25em] text-amber-500 font-bold uppercase text-center whitespace-nowrap">
+                  ROVILL MOTION
                 </span>
               </div>
               <div className="mt-8 flex flex-col items-center gap-1.5 font-mono text-[9px] text-[#8e8e93] tracking-widest text-center uppercase">
