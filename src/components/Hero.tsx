@@ -24,7 +24,7 @@ export default function Hero() {
 
   const contentY = useTransform(localScroll, [0, 0.8], [0, 100]);
   const contentOpacity = useTransform(localScroll, [0, 0.6], [1, 0]);
-  const videoScale = useTransform(localScroll, [0, 1], [1, 1.08]);
+  const videoScale = useTransform(localScroll, [0, 1], [0.75, 0.81]);
   const videoBlur = useTransform(localScroll, [0, 0.8], ["blur(0px)", "blur(4px)"]);
 
   const videoUrl =
@@ -49,24 +49,27 @@ export default function Hero() {
       className="relative w-full min-h-[100dvh] overflow-hidden bg-black flex flex-col justify-between"
     >
       {/* Background Video Layer with Parallax scale */}
-      <motion.div
-        style={{ scale: videoScale, filter: videoBlur }}
-        className="absolute inset-0 w-full h-full z-0"
-      >
-        <video
-          ref={videoRef}
-          src={videoUrl}
-          autoPlay
-          muted
-          loop
-          playsInline
-          onLoadedData={() => setVideoLoaded(true)}
-          className="w-full h-full object-cover object-center pointer-events-none select-none"
-        />
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
+        <motion.div
+          style={{ scale: videoScale, filter: videoBlur }}
+          className="absolute w-[133.33%] h-[133.33%] -left-[16.66%] -top-[16.66%] origin-center"
+        >
+          <video
+            ref={videoRef}
+            src={videoUrl}
+            autoPlay
+            muted
+            loop
+            playsInline
+            onLoadedData={() => setVideoLoaded(true)}
+            className="w-full h-full object-cover object-center pointer-events-none select-none"
+            style={{ objectFit: "cover", objectPosition: "center center" }}
+          />
+        </motion.div>
         {/* Subtle Dark 30% Overlay for pristine typography contrast */}
-        <div className="absolute inset-0 bg-black/30 backdrop-brightness-75 z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20 z-10" />
-      </motion.div>
+        <div className="absolute inset-0 bg-black/30 backdrop-brightness-75 z-10 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20 z-10 pointer-events-none" />
+      </div>
 
       {/* Spacing alignment for transparent header */}
       <div className="h-24 relative z-20 pointer-events-none"></div>
